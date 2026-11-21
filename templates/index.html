@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Spam Detection</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Email Spam Detection</h1>
+
+        <p>Enter your message below</p>
+
+        <form method="POST">
+
+            <textarea
+                name="message"
+                placeholder="Enter your email or message here..."
+                required></textarea>
+
+            <button type="submit">
+                Check Message
+            </button>
+
+        </form>
+
+        {% if result %}
+
+            {% if result == "Spam Message" %}
+                <h2 class="spam">{{ result }}</h2>
+            {% else %}
+                <h2 class="safe">{{ result }}</h2>
+            {% endif %}
+
+        {% endif %}
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    max-width: 550px;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+h1 {
+    color: #4338ca;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+/* Paragraph */
+p {
+    color: #555;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+/* Text Area */
+textarea {
+    width: 100%;
+    height: 160px;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    font-size: 16px;
+    resize: none;
+    outline: none;
+}
+
+textarea:focus {
+    border-color: #667eea;
+}
+
+/* Button */
+button {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Result */
+h2 {
+    margin-top: 25px;
+    color: #16a34a;
+    font-size: 22px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .container {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+/* Spam Result */
+.spam {
+    color: #dc2626;
+    background: #fee2e2;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+/* Safe Result */
+.safe {
+    color: #16a34a;
+    background: #dcfce7;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
